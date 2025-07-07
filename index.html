@@ -10,36 +10,83 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        header {
             background-color: #2c3e50;
             color: white;
-            padding: 20px 0;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 50px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
         }
         section {
-            padding: 50px 0;
+            padding: 70px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .section-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
         }
         .links-section a {
-            color: #2c3e50;
+            color: #ecf0f1;
             text-decoration: none;
             font-size: 18px;
+            margin-bottom: 15px;
+            display: block;
         }
         .links-section a:hover {
             color: #3498db;
         }
+        .section-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section-content ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
         footer {
-            background-color: #2c3e50;
+            background-color: #34495e;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
         }
-        h2 {
-            color: #2c3e50;
+        footer p {
+            font-size: 1rem;
         }
-        p {
-            color: #555;
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #2980b9;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        .card {
+            background-color: #34495e;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .card-body {
+            color: #ecf0f1;
+        }
+        .card-body h5 {
+            font-size: 1.5rem;
+        }
+        .card-body p {
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -51,54 +98,80 @@
         <p>Your Go-To Source for Expert Plumbing and HVAC Insights</p>
     </header>
 
-    <!-- Section 1: Introduction -->
-    <section id="intro" class="container">
-        <h2 class="text-center">Welcome to Our Blog</h2>
-        <p class="text-center">We provide insightful and valuable blog posts related to plumbing, HVAC, and related services. Explore our latest articles to stay informed and up-to-date with the best tips, tricks, and guides in the industry.</p>
+    <!-- Section 1: Welcome -->
+    <section id="welcome" class="container text-center text-light">
+        <h2 class="section-title">Welcome to Our Blog</h2>
+        <p class="section-content">We provide high-quality blog posts related to plumbing, HVAC, and home improvement. Whether you're looking for tips on maintaining your plumbing system, understanding HVAC technology, or improving your home's efficiency, our content is here to guide you.</p>
     </section>
 
-    <!-- Section 2: Blog Links -->
-    <section id="blogs" class="container bg-light">
-        <h2 class="text-center">Latest Blog Posts</h2>
+    <!-- Section 2: Latest Blog Posts -->
+    <section id="blogs" class="container bg-dark text-light">
+        <h2 class="section-title text-center">Latest Blog Posts</h2>
         <div class="links-section">
-            <ul class="list-unstyled">
-                <li><a href="https://medium.com/@taqit3852/the-secret-to-effective-plumbing-services-why-atc-plumbing-stands-out-in-the-industry-a054c75e7487" target="_blank">The Secret to Effective Plumbing Services: Why ATC Plumbing Stands Out in the Industry</a></li>
-                <li><a href="https://medium.com/@taqit3852/the-ultimate-guide-to-choosing-the-right-heating-and-air-conditioning-company-why-flo-heating-and-78a2503b693b" target="_blank">The Ultimate Guide to Choosing the Right Heating and Air Conditioning Company: Why Flo Heating and Air is the Best Choice</a></li>
-                <li><a href="https://daily-life-on-sale.blogspot.com/2025/07/the-ultimate-guide-to-choosing-right.html" target="_blank">The Ultimate Guide to Choosing the Right HVAC Service Provider</a></li>
-                <li><a href="https://daily-life-on-sale.blogspot.com/2025/07/the-key-to-reliable-plumbing-why-atc.html" target="_blank">The Key to Reliable Plumbing: Why ATC Plumbing is Your Best Bet</a></li>
-            </ul>
+            <a href="https://medium.com/@taqit3852/the-secret-to-effective-plumbing-services-why-atc-plumbing-stands-out-in-the-industry-a054c75e7487" target="_blank">The Secret to Effective Plumbing Services: Why ATC Plumbing Stands Out in the Industry</a>
+            <a href="https://medium.com/@taqit3852/the-ultimate-guide-to-choosing-the-right-heating-and-air-conditioning-company-why-flo-heating-and-78a2503b693b" target="_blank">The Ultimate Guide to Choosing the Right Heating and Air Conditioning Company: Why Flo Heating and Air is the Best Choice</a>
+            <a href="https://daily-life-on-sale.blogspot.com/2025/07/the-ultimate-guide-to-choosing-right.html" target="_blank">The Ultimate Guide to Choosing the Right HVAC Service Provider</a>
+            <a href="https://daily-life-on-sale.blogspot.com/2025/07/the-key-to-reliable-plumbing-why-atc.html" target="_blank">The Key to Reliable Plumbing: Why ATC Plumbing is Your Best Bet</a>
         </div>
     </section>
 
-    <!-- Section 3: About Us -->
-    <section id="about-us" class="container">
-        <h2 class="text-center">About Our Blog</h2>
-        <p>Our blog aims to provide valuable information on plumbing and HVAC topics, offering expert tips and guides. Whether you're a homeowner, business owner, or just someone interested in learning more about these essential services, our content is tailored to meet your needs.</p>
+    <!-- Section 3: About Our Blog -->
+    <section id="about-us" class="container text-center">
+        <h2 class="section-title">About Our Blog</h2>
+        <p class="section-content">Our blog is dedicated to providing readers with reliable, expert-driven content on plumbing, heating, ventilation, and air conditioning (HVAC). We aim to keep you informed on the latest trends, practical tips, and in-depth guides to help you maintain your systems at home or in your business.</p>
     </section>
 
-    <!-- Section 4: Blog Categories -->
-    <section id="categories" class="container bg-light">
-        <h2 class="text-center">Blog Categories</h2>
-        <ul class="list-unstyled text-center">
-            <li>Plumbing Maintenance</li>
-            <li>Heating & Air Conditioning Systems</li>
-            <li>Energy Efficiency Tips</li>
-            <li>Home Improvement Guides</li>
-        </ul>
+    <!-- Section 4: Popular Topics -->
+    <section id="categories" class="container bg-dark text-light">
+        <h2 class="section-title text-center">Popular Topics</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plumbing Maintenance</h5>
+                        <p class="card-text">Learn about common plumbing issues and how to maintain your plumbing systems efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Heating & Air Conditioning</h5>
+                        <p class="card-text">Explore the best practices for maintaining and troubleshooting your HVAC systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Energy Efficiency Tips</h5>
+                        <p class="card-text">Find energy-saving strategies to reduce your bills and improve your home's sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Improvement Guides</h5>
+                        <p class="card-text">Get practical advice on DIY home improvement projects and expert renovation tips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section 5: Contact Us -->
-    <section id="contact" class="container">
-        <h2 class="text-center">Contact Us</h2>
-        <p>If you have any questions or need more information, feel free to contact us. We’re always happy to hear from our readers!</p>
-        <p><strong>Email:</strong> contact@plumbinghvacblogs.com</p>
+    <section id="contact" class="container text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-content">If you have any questions or suggestions, feel free to reach out. We would love to hear your feedback and ideas for future blog posts!</p>
+        <p>Email: <a href="mailto:contact@plumbinghvacblogs.com" class="text-info">contact@plumbinghvacblogs.com</a></p>
     </section>
 
     <!-- Section 6: Newsletter Subscription -->
-    <section id="newsletter" class="container bg-light">
-        <h2 class="text-center">Subscribe to Our Newsletter</h2>
-        <p class="text-center">Stay updated with our latest blog posts and news by subscribing to our newsletter.</p>
-        <form class="text-center">
+    <section id="newsletter" class="container bg-dark text-light text-center">
+        <h2 class="section-title">Subscribe to Our Newsletter</h2>
+        <p class="section-content">Stay updated with our latest posts and exclusive tips by subscribing to our newsletter.</p>
+        <form>
             <input type="email" class="form-control w-50 mx-auto" placeholder="Enter your email" required>
             <button type="submit" class="btn btn-primary mt-3">Subscribe</button>
         </form>
